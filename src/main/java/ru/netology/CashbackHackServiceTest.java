@@ -9,7 +9,7 @@ public class CashbackHackServiceTest {
 
     CashbackHackService cashbackHackService = new CashbackHackService();
 
-    @Test
+    @org.junit.Test
     public void shouldCalculateRemainWithZeroAmount() {
         int amount = 0;
 
@@ -19,7 +19,7 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldCalculateRemainWithAmountUnderBoundary() {
         int amount = 999;
 
@@ -29,7 +29,7 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldCalculateRemainWithAmountOverBoundary() {
         int amount = 1001;
 
@@ -39,7 +39,7 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldCalculateRemainWithAmountEqualsBoundary() {
         int amount = 10000;
 
